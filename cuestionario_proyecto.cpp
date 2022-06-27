@@ -5,7 +5,8 @@ using namespace std;
 class cuestionario
 {
 public:
-	int puntaje, banco, respuesta, nivel, ver_resp, respuestac, acierto,rondas,rondas_max;
+	int puntaje, banco, respuesta, nivel, ver_resp, respuestac, acierto,rondas,rondas_max, pun_j1, pun_j2;
+	char j1, j2;
 	cuestionario();
 	//-------------------------iniciar variables-------------------------
 
@@ -60,7 +61,7 @@ public:
 	void puntos()
 	{
 
-		system("cls");
+		
 		cout << "\t\t\t\t\t\t\t\t\tPuntaje: " << puntaje << "\n";
 		cout << "\t\t\t\t\t\t\t\t\tBanco: " << banco << "\n\n";
 		if (nivel == 1)
@@ -494,7 +495,7 @@ public:
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t- Cuanto mide la torre eiffel-"
+		cout << "\t\t\t\t\t\t\t- Cuanto mide la torre eiffel                       -"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
@@ -673,22 +674,21 @@ public:
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t- Dentro del lenguaje de control de datos           -\n" 
-			<< "\t\t\t\t\t\t\t - la sentencia GRANT de SQL hace:                   -"
+		cout << "\t\t\t\t\t\t\t- Cual es la moneda de Reino Unido                  -"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-----------------------------------------------------"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 1 ---> Concede los derechos de acceso a un objeto."
+		cout << "\t\t\t\t\t\t\t 1 ---> Pesos."
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 2 ---> Revoca los derechos de acceso a un objeto."
+		cout << "\t\t\t\t\t\t\t 2 ---> Libra."
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 3 ---> Concede los derechos de conexion al host."
+		cout << "\t\t\t\t\t\t\t 3 ---> Euro."
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t---->";
 		cin >> respuesta;
-		respuestac = 1;
+		respuestac = 2;
 	}	
 	// pregunta 15--------------------------------------------------------------
 	void Pg_xv()
@@ -699,17 +699,17 @@ public:
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t- La Web 2.0 es un elemento que permite:            -"
+		cout << "\t\t\t\t\t\t\t- Cuantas patas tiene una arania?                   -"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-----------------------------------------------------"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 1 ---> Concepto de las tecnologias de la informacion y comunicacion que se      fundamenta en crear y compartir recursos de diferente naturaleza."
+		cout << "\t\t\t\t\t\t\t 1 ---> 8."
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 2 ---> Herramienta para solo enviar correos electronicos"
+		cout << "\t\t\t\t\t\t\t 2 ---> 3"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 3 ---> Plataforma de alta tecnologia de computo para compartir recursos en las redes basadas en Cisco"
+		cout << "\t\t\t\t\t\t\t 3 ---> 9"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t---->";
 		cin >> respuesta;
@@ -724,7 +724,7 @@ public:
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t- Cual de esstos no es un navegador?                -"
+		cout << "\t\t\t\t\t\t\t- Cual de estos no es un navegador?                -"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
@@ -838,7 +838,7 @@ public:
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t---->";
 		cin >> respuesta;
-		respuestac = 1;
+		respuestac = 3;
 	}	
 	// pregunta 21--------------------------------------------------------------
 	void Pg_xxi()
@@ -924,17 +924,17 @@ public:
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t- Que tienen en comun Dropbox y GoogleDrive?        -"
+		cout << "\t\t\t\t\t\t\t- Cual es el valor de PI?                           -"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                   -"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t-----------------------------------------------------"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 1 ---> Son dos navegadores Web"
+		cout << "\t\t\t\t\t\t\t 1 ---> 3.141582"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 2 ---> Son servicios de alojamiento de archivos en la nube"
+		cout << "\t\t\t\t\t\t\t 2 ---> 3.141592"
 			<< "\n";
-		cout << "\t\t\t\t\t\t\t 3 ---> Son aplicaciones para hacer paginas web"
+		cout << "\t\t\t\t\t\t\t 3 ---> 3.141682"
 			<< "\n";
 		cout << "\t\t\t\t\t\t\t---->";
 		cin >> respuesta;
@@ -1024,21 +1024,21 @@ public:
             << "\n";
         cout << "\t\t\t\t\t\t\t-                                                        -"
             << "\n";
-        cout << "\t\t\t\t\t\t\t- Se refiere a las redes sociales:                        -"
+        cout << "\t\t\t\t\t\t\t- Que pais tiene forma de bota?                          -"
             << "\n";
         cout << "\t\t\t\t\t\t\t-                                                        -"
             << "\n";
         cout << "\t\t\t\t\t\t\t----------------------------------------------------------"
             << "\n";
-        cout << "\t\t\t\t\t\t\t 1 ---> Grupos de personas que se comunican en proyectos"
+        cout << "\t\t\t\t\t\t\t 1 ---> Mexico"
             << "\n";
-        cout << "\t\t\t\t\t\t\t 2 ---> Redes relacionales personales o laborales en las que se comunican varias personas a la vez"
+        cout << "\t\t\t\t\t\t\t 2 ---> Ecuador"
             << "\n";
-        cout << "\t\t\t\t\t\t\t 3 ---> Se comunica a traves de un telefono"
+        cout << "\t\t\t\t\t\t\t 3 ---> Italia"
             << "\n";
         cout << "\t\t\t\t\t\t\t---->";
         cin >> respuesta;
-        respuestac = 2;
+        respuestac = 3;
 
 
 
@@ -1272,7 +1272,7 @@ public:
 				<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                        -"
 				<< "\n";
-		cout << "\t\t\t\t\t\t\t-  En que anioo ca el muro de Berlin?                    -"
+		cout << "\t\t\t\t\t\t\t-  En que anioo se cayo el muro de Berlin?                    -"
 				<< "\n";
 		cout << "\t\t\t\t\t\t\t-                                                        -"
 				<< "\n";
@@ -1288,7 +1288,7 @@ public:
 		cin >> respuesta;
 		respuestac = 3;
 	}
-	void Pg_xxxxix()
+	void Pg_xxxix()
 	{
 		cout << "\t\t\t\t\t\t\t\t\tPregunta 39:"
 				<< "\n";
@@ -1577,8 +1577,33 @@ public:
 		cin >> respuesta;
 		respuestac = 3;
 	}
+	void puntaje_ms()
+	{
+
+	}
+	void muerte_nombres()
+	{
+		cout<<"Inserte el nombre del jugador 1";
+		cin>>j1;
+		cout << "Inserte el nombre del jugador 2: ";
+		cin>>j2;
+	}
+	void muerte_cabecera()
+	{
+		cout<<"\n"<<j1<<"Puntaje"<<pun_j1<<"\n";
+		cout<<j2<<"Puntaje"<<pun_j2<<"\n";
+	}
+	void muerte_i_j1()
+	{
+		cout <<"Pregunta 1";
+	}
+    void muerte_i_j2()
+    {
+        cout <<"Pregunta 2";
+    }
 	void verificar()
 	{
+		system("cls");
 		if (respuesta == respuestac)
 		{
 			cout << "\n\n\t\t\t\t\t\t\t\t+------------------------------------+\n";
@@ -1838,8 +1863,7 @@ int main()
 	objc.verificar();
 	objc.select_banco();
 
-
-	// pregunta 31 
+	// pregunta 31
 	objc.puntos();
 	objc.Pg_xxxi();
 	objc.verificar();
@@ -1868,8 +1892,8 @@ int main()
 	objc.Pg_xxxv();
 	objc.verificar();
 	objc.select_banco();
-	
-	//pregunta 36
+
+	// pregunta 36
 	objc.puntos();
 	objc.Pg_xxxvi();
 	objc.verificar();
@@ -1890,7 +1914,7 @@ int main()
 
 	// pregunta 39
 	objc.puntos();
-	objc.Pg_xxxiv();
+    objc.Pg_xxxix();
 	objc.verificar();
 	objc.select_banco();
 
@@ -1924,7 +1948,7 @@ int main()
 	objc.verificar();
 	objc.select_banco();
 	objc.fin_ronda();
-	
+
 	// pregunta 45
 	objc.puntos();
 	objc.Pg_xlv();
@@ -1933,7 +1957,7 @@ int main()
 
 	// pregunta 46
 	objc.puntos();
-	objc.Pg_xxvi();
+	objc.Pg_xxxvi();
 	objc.verificar();
 	objc.select_banco();
 
@@ -1943,7 +1967,7 @@ int main()
 	objc.verificar();
 	objc.select_banco();
 
-	// pregunta 48 
+	// pregunta 48
 	objc.puntos();
 	objc.Pg_xlviii();
 	objc.verificar();
@@ -1961,7 +1985,9 @@ int main()
 	objc.verificar();
 	objc.select_banco();
 	objc.fin_ronda();
-	
-	//PREGUNTAS FINALES (HAY QUE PONERLAS MAS DIFICILES)
+
+
+	// PREGUNTAS FINALES (HAY QUE PONERLAS MAS DIFICILES)
+    cout<< "\nFin del programa\n";
 	system("pause");
 }
