@@ -1742,6 +1742,7 @@ int main()
 	objc.puntos();
 	objc.Pg_x();
 	objc.verificar();
+	objc.select_banco();
 
 	//pregunta 11 
 	objc.puntos();
@@ -1957,7 +1958,7 @@ int main()
 
 	// pregunta 46
 	objc.puntos();
-	objc.Pg_xxxvi();
+	objc.Pg_xlvi();
 	objc.verificar();
 	objc.select_banco();
 
@@ -1979,12 +1980,14 @@ int main()
 	objc.verificar();
 	objc.select_banco();
 
-	// pregunta 50
+	// pregunta 50 
 	objc.puntos();
 	objc.Pg_l();
 	objc.verificar();
 	objc.select_banco();
 	objc.fin_ronda();
+	//Otras rondas min 6 va a faltar un aronda 
+//primero con 12
 
 
 	// PREGUNTAS FINALES (HAY QUE PONERLAS MAS DIFICILES)
